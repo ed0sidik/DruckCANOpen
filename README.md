@@ -17,14 +17,25 @@ MCP_CAN_lib MCP2515 CAN-bus controller library is required. It can be downloaded
 https://github.com/coryjfowler/MCP_CAN_lib
 
 Serial Command List
+
 rp : Read Pressure
+
 rt : Read Temperature
+
 rs : Read S/N
+
 ri : Read NodeID
+
 ci : Change Sensor Node ID
+
 si : Set NodeID to be read
+
 rb : Read Bit Rate
+
 cb : Change Sensor Bit Rate
+
 sb : Set Host Bit Rate
+
 rf : Reset Sensor to Factory Default Setup
+
 rfv : Read Field Value1
