@@ -9,6 +9,7 @@ The library and sample code have been verified to work with Arduino UNO and CAN-
 Below are CAN-bus shield vendors.
 - Seeed Studio : www.seeedstudio.com/CAN-BUS-Shield-V2.html
 - Keyestudio : www.keyestudio.com/products/keyestudio-can-bus-shield-mcp2515-chip-with-sd-socket-for-arduino-uno-r3-543
+
 I recommend to use Seeed Studio, because there is little information on Keyestudio product. On Keyestudio CAN-bus shield, there is no
 Rdif between CAN-H and CAN-L. You have to mount Rdif by yourself. Recommended Rdif value is 120Ω, but I use 330Ω and it works.
 
