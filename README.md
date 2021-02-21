@@ -6,9 +6,11 @@ dps_can.h is library of byte stream to read/write data from/to DPS pressure sens
 CANbus-2.ino is sample code to read/write data from/to DPS pressure sensor using terminal software
 
 The library and sample code have been verified to work with Arduino UNO and CAN-bus shield which utilizes MCP2515 and MCP2551 chips.
-Below are CAN-bus shield vendors
+Below are CAN-bus shield vendors.
 - Seeed Studio : www.seeedstudio.com/CAN-BUS-Shield-V2.html
 - Keyestudio : www.keyestudio.com/products/keyestudio-can-bus-shield-mcp2515-chip-with-sd-socket-for-arduino-uno-r3-543
+I recommend to use Seeed Studio, because there is little information on Keyestudio product. On Keyestudio CAN-bus shield, there is no
+Rdif between CAN-H and CAN-L.
 
 MCP_CAN_lib MCP2515 CAN-bus controller library is required. It can be downloaded from repository below
 https://github.com/coryjfowler/MCP_CAN_lib
