@@ -6,7 +6,7 @@
 
   This sample code is free, you can redistribute it and/or modify it with your own responsibility
 
-  The code is intended to be used in Arduino Uno with CAN-bus Shield
+  The code is intended to be used in Arduino Uno or MEGA with CAN-bus Shield
 */
 
 #include <mcp_can.h>
@@ -34,7 +34,8 @@ int NodeID = 2;
 int BitRate = 250;
 
 //MCP_CAN CAN0(10);// CAN0 CS: pin 10
-MCP_CAN CAN1(9); // CAN1 CS: pin 9
+//MCP_CAN CAN1(9); // CAN1 CS: pin 9
+MCP_CAN CAN1(10);
 
 void setup() {
   // put your setup code here, to run once:
@@ -156,7 +157,7 @@ void loop() {
       Serial.println(" kpbs");
       setup();
     }
-    else if(input == "rf"){ // Reset to Factory Default Setup
+    else if(input == "rst"){ // Reset to Factory Default Setup
       Serial.println("Reset Client to Factory Default Setup");
       can_reset();
       Serial.println("Power cycle the sensor to enable the change.");
