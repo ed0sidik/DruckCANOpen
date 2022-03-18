@@ -27,12 +27,12 @@ rt : Read Temperature<br>
 Command : rt &lt; CRLF &gt; <br>
 Reply : Temperature : &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
 
-rs : Read S/N
-Command : rs &lt; CRLF &gt;
+rs : Read S/N<br>
+Command : rs &lt; CRLF &gt; <br>
 Reply : S/N : &lt; Serial Number &gt;&lt; CRLF &gt;
 
-ri : Read NodeID
-Command : riv&lt; CRLF &gt;
+ri : Read NodeID<br>
+Command : riv&lt; CRLF &gt; <br>
 Reply : NodeID : &lt; NodeID &gt;&lt; CRLF &gt;
 
 ci : Change Sensor Node ID
