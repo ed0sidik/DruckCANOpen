@@ -20,7 +20,7 @@ https://github.com/coryjfowler/MCP_CAN_lib
 Serial Command List
 
 rp : Read Pressure<br>
-Command : rp&ltCRLF><br>
+Command : rp &lt CRLF &lt <br>
 Reply : Pressure : <Pressure Value><Pressure Unit><CRLF>
 
 rt : Read Temperature
