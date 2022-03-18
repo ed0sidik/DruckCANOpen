@@ -23,9 +23,9 @@ rp : Read Pressure<br>
 Command : rp &lt; CRLF &gt; <br>
 Reply : Pressure : &lt; Pressure Value &gt; &lt; Pressure Unit &gt; &lt; CRLF &gt;
 
-rt : Read Temperature
-Command : rt<CRLF>
-Reply : Temperature : <Temperature Value><Temperature Unit><CRLF>
+rt : Read Temperature<br>
+Command : rt &lt; CRLF &gt; <br>
+Reply : Temperature : &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
 
 rs : Read S/N
 Command : rs<CRLF>
