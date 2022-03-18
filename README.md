@@ -21,7 +21,7 @@ Serial Command List
 
 rp : Read Pressure<br>
 Command : rp &lt; CRLF &gt; <br>
-Reply : Pressure : <Pressure Value><Pressure Unit><CRLF>
+Reply : Pressure : &lt; Pressure Value &gt; &lt; Pressure Unit &gt; &lt; CRLF &gt;
 
 rt : Read Temperature
 Command : rt<CRLF>
