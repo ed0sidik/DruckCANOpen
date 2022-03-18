@@ -20,15 +20,27 @@ https://github.com/coryjfowler/MCP_CAN_lib
 Serial Command List
 
 rp : Read Pressure
+Command : rp<CRLF>
+Reply : Pressure : <Pressure Value><Pressure Unit><CRLF>
 
 rt : Read Temperature
+Command : rt<CRLF>
+Reply : Temperature : <Temperature Value><Temperature Unit><CRLF>
 
 rs : Read S/N
+Command : rs<CRLF>
+Reply : S/N : <Serial Number><CRLF>
 
 ri : Read NodeID
+Command : ri<CRLF>
+Reply : NodeID : <NodeID><CRLF>
 
 ci : Change Sensor Node ID
-
+Command : ci<CRLF>
+Reply : Change NodeID. Please type NodeID and press Enter
+Send : <NodeID><CRLF>
+Reply : Power cycle the sensor to enable the change.
+  
 si : Set NodeID to be read
 
 rb : Read Bit Rate
