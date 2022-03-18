@@ -40,3 +40,7 @@ sb : Set Host Bit Rate
 rst : Reset Sensor to Factory Default Setup (don't execute on DPS8000)
 
 rfv : Read Field Value1
+
+rf : Read selected FIR filter
+
+cf : Change FIR filter
