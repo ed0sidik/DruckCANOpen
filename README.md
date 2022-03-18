@@ -32,13 +32,13 @@ Command : rs &lt; CRLF &gt; <br>
 Reply : S/N : &lt; Serial Number &gt;&lt; CRLF &gt;
 
 ri : Read NodeID<br>
-Command : riv&lt; CRLF &gt; <br>
+Command : ri &lt; CRLF &gt; <br>
 Reply : NodeID : &lt; NodeID &gt;&lt; CRLF &gt;
 
-ci : Change Sensor Node ID
-Command : ci<CRLF>
-Reply : Change NodeID. Please type NodeID and press Enter
-Send : <NodeID><CRLF>
+ci : Change Sensor NodeID<br>
+Command : ci &lt; CRLF &gt; <br>
+Reply : Change NodeID. Please type NodeID and press Enter <br>
+Send : &lt; NodeID &gt;&lt; CRLF &gt; <br>
 Reply : Power cycle the sensor to enable the change.
   
 si : Set NodeID to be read
