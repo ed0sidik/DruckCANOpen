@@ -27,6 +27,10 @@ rt : Read Temperature<br>
 Command : rt &lt; CRLF &gt; <br>
 Reply : Temperature : &lt; Temperature Value &gt;&lt; Temperature Unit &gt;&lt; CRLF &gt;
 
+pn : Read Product No<br>
+Command : pn &lt; CRLF &gt; <br>
+Reply : Product No. : &lt; Product No. &gt;&lt; CRLF &gt;
+
 rs : Read S/N<br>
 Command : rs &lt; CRLF &gt; <br>
 Reply : S/N : &lt; Serial Number &gt;&lt; CRLF &gt;
