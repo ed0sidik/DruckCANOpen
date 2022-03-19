@@ -24,6 +24,8 @@
 #define BitRateReg  0x05
 #define FieldValue  0x06
 #define FIR         0x07
+#define ProductNo   0x08
+
 
 unsigned long rxId;
 byte len;
@@ -106,7 +108,11 @@ void loop() {
     String input = Serial.readStringUntil(10);
     //Serial.flush();
     input.trim();
-    if(input == "rp"){ // Read Pressure
+    if(input == "pn"){      // Read Product No.
+      Serial.print("Product No. : ");
+      Serial.println(can_read(ProductNo),DEC);
+    }
+    else if(input == "rp"){ // Read Pressure
       Serial.print("Pressure : ");
       Serial.print(calcFloat(can_read(Pressure)),4);
       Serial.println(" bar");
@@ -232,6 +238,9 @@ long can_read(byte reg){
   }
   else if (reg == 0x07){
     CAN1.sendMsgBuf(Read_FIR.CAN_ID + NodeID, Read_FIR.EXT, Read_FIR.LEN, Read_FIR.txBuf);
+  }
+  else if (reg == 0x08){
+    CAN1.sendMsgBuf(Read_Prod_No.CAN_ID + NodeID, Read_Prod_No.EXT, Read_Prod_No.LEN, Read_Prod_No.txBuf);
   }
   delay(100);
   if(CAN1.checkReceive()==CAN_MSGAVAIL){
