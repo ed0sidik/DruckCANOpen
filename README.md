@@ -13,6 +13,7 @@ Below are CAN-bus shield vendors.
 I recommend to use Seeed Studio, because there is little information on Keyestudio product. Keyestudio CAN-bus shield doesn't work on Arduino MEGA.
 On Keyestudio CAN-bus shield, there is no Rdif mounted between CAN-H and CAN-L. You have to mount Rdif by yourself. 
 Recommended Rdif value is 120Ω, but I use 330Ω instead and it works (Arduino UNO only).
+D-Sub 9 pin assignment : 3:GND, 2:CAN-LO, 7:CAN-HI
 
 MCP_CAN_lib MCP2515 CAN-bus controller library is required. It can be downloaded from repository below
 https://github.com/coryjfowler/MCP_CAN_lib
