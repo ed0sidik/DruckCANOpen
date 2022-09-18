@@ -2,11 +2,15 @@
 
   Author : Edwin Sidik
 
-  Ver.0 First Release 20-Feb 2021
+  Ver.0 20-Feb 2021
+  First Release
 
   Ver.1 18-Mar 2022
   - If else statement added to avoid 0 being written to NodeID by mistake.
   - Read and change FIR setting added.
+
+  Ver.2 18-Sep 2022
+  - Add "rc" command to read pressure and temperature 
 
   This sample code is free, you can redistribute it and/or modify it with your own responsibility
 
@@ -82,6 +86,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  boolean KeepReading = true;
   static int count=0; 
 /*  if(millis()-Pre_millis > 100){ // Period: 100ms
     CAN1.sendMsgBuf(0x602, 0, 8, txBuf0);
@@ -122,6 +127,23 @@ void loop() {
       Serial.print(calcFloat(can_read(Temperature)),2);
       Serial.println(" deg.C");
     }
+    else if(input == "rc"){ // Read Pressure and Temperature Continuously
+      while(KeepReading){
+        Serial.print("Pressure : ");
+        Serial.print(calcFloat(can_read(Pressure)),4);
+        Serial.print(" bar, ");
+        Serial.print("Temperature : ");
+        Serial.print(calcFloat(can_read(Temperature)),2);
+        Serial.println(" deg.C");
+        if(Serial.available()>0){
+          Serial.readStringUntil(10);
+          KeepReading = false;
+        }
+        delay(500);
+      }
+      KeepReading = true;
+    }
+    
     else if(input == "rs"){ // Read S/N
       Serial.print("S/N : ");
       Serial.println(can_read(SerialNo),DEC);
