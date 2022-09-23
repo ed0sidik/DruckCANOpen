@@ -50,7 +50,7 @@ Reply : Change NodeID. Please type NodeID and press Enter <br>
 Send : &lt; NodeID &gt;&lt; CRLF &gt; <br>
 Reply : Power cycle the sensor to enable the change.
   
-si : Set NodeID to be read
+si : Set NodeID to be read<br>
 Command : si &lt; CRLF &gt; <br>
 Reply : Set NodeID to be read. Please type NodeID and press Enter <br>
 Send : &lt; NodeID &gt;&lt; CRLF &gt; <br>
