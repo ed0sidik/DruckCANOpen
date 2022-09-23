@@ -56,11 +56,21 @@ Reply : Set NodeID to be read. Please type NodeID and press Enter <br>
 Send : &lt; NodeID &gt;&lt; CRLF &gt; <br>
 Reply : NodeID to be read is &lt; NodeID &gt;&lt; CRLF &gt; <br>
 
-rb : Read Bit Rate
+rb : Read Bit Rate<br>
+Command : rb &lt; CRLF &gt; <br>
+Reply : Bit Rate : &lt; Bit Rate &gt;&lt; CRLF &gt;
 
-cb : Change Sensor Bit Rate
+cb : Change Sensor Bit Rate<br>
+Command : cb &lt; CRLF &gt; <br>
+Reply : Change Bit Rate. Please type Bit Rate and press Enter <br>
+Send : &lt; Bit Rate &gt;&lt; CRLF &gt; <br>
+Reply : Power cycle the sensor to enable the change.
 
-sb : Set Host Bit Rate
+sb : Set Host Bit Rate <br>
+Command : sb &lt; CRLF &gt; <br>
+Reply : Set Host Bit Rate. Please type Bit Rate and press Enter <br>
+Send : &lt; Host Bit Rate &gt;&lt; CRLF &gt; <br>
+Reply : Host Bit Rate is set to &lt; Host Bit Rate &gt; kpbs &lt; CRLF &gt; <br>
 
 rst : Reset Sensor to Factory Default Setup (don't execute on DPS8000)
 
