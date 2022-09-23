@@ -51,6 +51,10 @@ Send : &lt; NodeID &gt;&lt; CRLF &gt; <br>
 Reply : Power cycle the sensor to enable the change.
   
 si : Set NodeID to be read
+Command : si &lt; CRLF &gt; <br>
+Reply : Set NodeID to be read. Please type NodeID and press Enter <br>
+Send : &lt; NodeID &gt;&lt; CRLF &gt; <br>
+Reply : NodeID to be read is &lt; NodeID &gt;&lt; CRLF &gt; <br>
 
 rb : Read Bit Rate
 
